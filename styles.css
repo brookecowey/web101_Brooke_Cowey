@@ -1,3 +1,102 @@
 body {
-background-color: pink;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFC0CB;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+/* What kind of selector is this? */
+.logo {
+  width: 200px;
+  height: 200px;
+  margin: 3% 10%;
+  
+}
+
+header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 100%;
+}
+
+main {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+
+/* This is an element within and element selector */ 
+nav > a {
+  margin: 2% 1% 3%;
+  height: 10%;
+  width: 15%;
+  color: #DB7093;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  border-radius: 30px;
+  background: #FFF5EE;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid #DB7093;
+}
+
+.has-border {
+  border-radius: 25px;
+  border: 2px solid black;
+  background: none;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 2%;
+}
+/* This is an ID selector */
+#profile-pic {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: 15% auto;
+  grid-column: 2/3;
+}
+
+h1 {
+  color:whitesmoke;
+  grid-column: 2/3;
+  margin: 3% auto;
+  
+}
+
+h2 {
+  grid-column: 2/3;
+  color: whitesmoke;
+  margin: 3% auto;
+  font-style: italic;
+}
+
+.small-text {
+  grid-column: 2/3;
+  color: #DB7093;
+  font-size: 10px;
+  margin: 3% auto;
+}
+
+button {
+  grid-column: 2/3;
+  margin: 3% auto;
+  width: 70%;
+  height: 15%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  border-radius: 25px solid #DB7093;
+  background: #DB7093;
+  padding: 20px;
+  padding-bottom: 5%;
+  text-align: center;
+  color: whitesmoke;
+  letter-spacing: 16px;
+  font-style: italic;
 }
