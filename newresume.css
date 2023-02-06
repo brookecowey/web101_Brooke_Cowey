@@ -1,11 +1,13 @@
 body{
   display: flex;
+  background-color: #D0B8A8;
 }
 aside{
 display: flex;
 flex-direction: column;
 width: 300px;
 margin: 10px;
+background-color: #DFD3C3;
 }
 .image-container {
   width: 100%;
@@ -24,16 +26,17 @@ margin: 10px;
 }
 
 .fa {
-  border: 1px solid black;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
+  border: 1px solid rgb(172, 140, 98);
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
 }
 
 .experience-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #F8EAD8;
 }
 h4, h5 {
   margin: 0;
@@ -46,4 +49,39 @@ main section {
 
 main section h1,h3 {
   align-self: center;
+
+}
+
+.bio{
+  font-size: 25px;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.skills {
+  background-color: #F8EAD8
+}
+
+.references {
+  background-color: #F8EAD8;
+}
+.socials {
+  background-color: #F8EAD8;
+}
+.records {
+  background-color: #F8EAD8;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h4 {
+  font-size: 20px;
 }
