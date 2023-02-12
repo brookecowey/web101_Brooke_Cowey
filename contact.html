@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./contact-styles.css">
+  <title>Contact Me</title>
+</head>
+<body>
+  <form action="results.html" method="GET" enctype="multipart/form-data">
+  <div class="form-group">
+<label for="name">Name</label>
+<input id="input1" type="text" placeholder="John Smith">
+  </div>
+  <div class="form-group">
+<label for="email">Email</label>
+<input type="email" placeholder="email@email.com">
+  </div>
+      </div>
+      <div>
+      <div class="form group">
+        <label for="comments">Comments</label>
+      <textarea placeholder="Comments"
+      minlength="20"
+      maxlength="500"></textarea>
+      </div>
+      </div>
+      <section>
+        <h2>How did you hear about me?</h2>
+        <input type="checkbox" id="classmate" name="classmate" value="classmate">
+<label for="classmate">Classmate</label><br>
+<input type="checkbox" id="resume" name="resume" value="resume">
+<label for="resume">Resume Submission</label><br>
+<input type="checkbox" id="linkedin" name="linkedin" value="linkedin">
+<label for="linkedin">LinkedIn</label><br>
+<input type="checkbox" id="rec" name="rec" value="rec">
+<label for="rec">Coding Academy Rec</label><br>
+      </section>
+      <section>
+        <h2>Would you like me to contact you?</h2>
+        <input type="radio" id="contact" name="contact-you" value="yes">
+<label for="html">Yes</label><br>
+<input type="radio" id="contact" name="contact-you" value="no">
+<label for="css">No</label><br>
+      </section>
+      <section>
+        <h2>Enter to birthday to receive a birthday wish from me!</h2>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" required>
+            </div>
+      </section>
+      <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
