@@ -1,0 +1,44 @@
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: rgb(244, 240, 230);
+}
+
+
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: linear-gradient(rgb(186, 151, 203), rgb(142, 188, 209), rgb(202, 140, 184));
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em pink;
+  border-radius: 5px;
+}
+
+.masthead-intro {
+ 
+    margin-bottom: 0.1em;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+}
+
+.masthead-heading {
+    color: pink;
+    margin-top: 1px;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: lowercase;
+}
+@media (max-width: 800px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+}
