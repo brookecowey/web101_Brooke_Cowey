@@ -1,34 +1,364 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles.css">
-    <title>My Portfolio</title>
-  </head>
-    <body>
-    <!-- This is a what comment line looks like in HTML -->
-    <!-- The rest of your code goes between here... -->
-    <header>
-        <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png" class="logo" alt="austin coding academy logo">
-        <nav>
-            <a href="./newresume.html" class="/has-border/">Resume</a> 
-            <a href ="./about.html"class="/has-border">About Me</a> 
-            <a class="/has-border/">My Blog</a> 
-            <a href="./contact.html" class="/has-border/">Contact Me</a> 
-          </nav>
-        </header>
-        <main>
-            <img src="./myProfilePic.jpg" id="profile-pic" alt="Head shot of Me">
-            <h1> Brooke Cowey</h1>
-            <h2> Student of Web Development</h2>
-            <button id="portfolio">Portfolio</button>
-    
-          <!-- REPLACE THIS LINE WITH THE PORTFOLIO BUTTON -->
-          <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
-        </main>
+<html lang="en">
+<head>
+  <title>Portfolio Website-Brooke</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
 
-    <!-- ...and here. -->
-    </body>
-  </html>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark  navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Brooke</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">Resume</a>
+                        </li>
+                        <li>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+
+                <h2 class="hero_title mt-5">Hi, my name is Brooke</h2>
+                <p class="hero_desc">I am a freelance web developer in Texas</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="aboutimage.JPG" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                  <ul>
+                    <li class="intro">Name: Brooke Cowey</li>
+                    <li class="intro">Age: 28</li>
+                    <li class="intro">Occupation: Freelance Web Developer</li>
+
+                </ul>
+                    <p class="aboutparagraph"> Hi, and welcome to my portfolio. Everything that you see I created while attending Austin Coding Academy's Full-Stack JavaScript Web Development course.
+                        
+                    </p>
+                    <div class="aboutparagraph">
+                      <p> I've been interested in web development since I was in college studying at Texas State University. While I did not get my bachelor's degree in web development, I did have a digital media concentration. This allowed me to take a into to development course, which is where my interest started. Our final project was to build our own website, which I really enjoyed. I like putting things together and figuring out why they fit, which I think is part of the reason that I enjoy coding. I also like the creative aspect that front-end developing allows. 
+                      </p>
+                      <p> I found Austin Coding Academy when I decided that I wanted to switch careers and give web development a shot. I'm glad that I enjoy challenges because there certainly have been a lot, but it is such a great feeling when you finally figure out what you were missing, even if you spent a long time looking at your code and it was a letter 's'. I am excited for the future and to see where web development takes me. You can continue scrolling to find my portfolio of projects I worked on while at Austin Coding Academy.
+
+                      </p>
+                    </div>
+                   
+                </div>
+            </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="TicTacToe.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Tic Tac Toe</h4>
+                            <p class="card-text">This is an interactive game of Tic Tac Toe. A window will pop up to declare a winner. The reset button clears the board.</p>
+                            <div class="text-center">
+                                <a href="https://brookecowey.github.io/TicTacToe-101/" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="NASA.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">NASA Page</h4>
+                            <p class="card-text">This is one of the first projects that we did. It is a contact page for NASA.</p>
+                            <div class="text-center">
+                                <a href="https://brookecowey.github.io/NASA-Contact/" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="Responsive.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">First Responsive Page</h4>
+                            <p class="card-text">This is the first responsive page that I built.</p>
+                            <div class="text-center">
+                                <a href="https://brookecowey.github.io/First-Responsive-Website/" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="CalculatorApp.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Calculator App</h4>
+                            <p class="card-text">This is working calculator that will provide the user an answer to whichever operation they choose.</p>
+                            <div class="text-center">
+                                <a href="https://brookecowey.github.io/calculator-app-101/" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="EvenOdd.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Even Odd List</h4>
+                            <p class="card-text">This list will allow a user to type in a word, and it will sort it based on the amount of letters in the word.</p>
+                            <div class="text-center">
+                                <a href="https://brookecowey.github.io/evenOdd-list/" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="mustache.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Barbershop Website</h4>
+                            <p class="card-text">This is a website that I replicated.</p>
+                            <div class="text-center">
+                                <a href="https://brookecowey.github.io/hairSalonWebsite/" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+     <!-- resume section-->
+   <section id="resume">
+    <h1 class="text-center">Resume</h1>
+    <div class="resume">
+        <div class="resume_left">
+          <div class="resume_profile">
+            <img src="./myProfilePic.JPG" alt="Woman in blue dress">
+          </div>
+          <div class="resume_content">
+            <div class="resume_item resume_info">
+              <div class="title">
+                <p class="bold">Brooke Cowey</p>
+                <p class="regular">Freelance Web Developer</p>
+              </div>
+              <ul>
+                <li>
+                  <div class="data">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+
+                    San Antonio, TX <br /> USA
+                  </div>
+                </li>
+                <li>
+                  <div class="data">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    brooke.cowey@gmail.com
+                  </div>
+                </li>
+                <li>
+                   
+                  <div class="data">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                    github.com/brookecowey
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="resume_item resume_skills">
+              <div class="title">
+                <p class="bold">skills</p>
+              </div>
+              <ul>
+                <li>
+                  <div class="skill_name">
+                    HTML
+                  </div>
+                </li>
+                <li>
+                  <div class="skill_name">
+                    CSS
+                  </div> 
+                </li>
+                <li>
+                  <div class="skill_name">
+                    JS
+                  </div>
+                </li>
+              </ul>
+            </div>
+           
+          </div>
+       </div>
+       <div class="resume_right">
+         <div class="resume_item resume_about">
+             <div class="title">
+                
+              </div>
+        
+         </div>
+         <div class="resume_item resume_work">
+             <div class="title">
+                <p class="bold">Work Experience</p>
+              </div>
+             <ul>
+                 <li>
+                     <div class="date">Present</div> 
+                     <div class="info">
+                          <p class="semi-bold">Lorem ipsum dolor sit amet.</p> 
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
+                     </div>
+                 </li>
+                 <li>
+                   <div class="date">Present</div>
+                   <div class="info">
+                          <p class="semi-bold">Lorem ipsum dolor sit amet.</p> 
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
+                     </div>
+                 </li>
+                 <li>
+                   <div class="date">Present</div>
+                   <div class="info">
+                          <p class="semi-bold">Lorem ipsum dolor sit amet.</p> 
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+         <div class="resume_item resume_education">
+           <div class="title">
+                <p class="bold">Education</p>
+              </div>
+           <ul>
+                 <li>
+                     <div class="date">2023</div> 
+                     <div class="info">
+                          <p class="semi-bold">Austin Coding Academy</p> 
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
+                     </div>
+                 </li>
+                 <li>
+                   <div class="date">2013 - 2017</div>
+                   <div class="info">
+                          <p class="semi-bold">Texas State University</p> 
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus!</p>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+         <div class="resume_item resume_hobby">
+           <div class="title">
+                <p class="bold">Hobby</p>
+              </div>
+            <ul>
+              <li><i class="fas fa-book"></i></li>
+              <li><i class="fas fa-gamepad"></i></li>
+              <li><i class="fas fa-music"></i></li>
+              <li><i class="fab fa-pagelines"></i></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+     
+     </body>
+     </html>
+            
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=San+Antonio,+TX,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
+                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                        </style>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.linkedin.com/in/brookecowey/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,102 +1,302 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #FFC0CB;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+  background-color: black;
 }
-/* What kind of selector is this? */
-.logo {
-  width: 200px;
-  height: 200px;
-  margin: 3% 10%;
-  
+.nav-link {
+  text-shadow: 1px 1px 1px #a3b899,
+  1px 1px 1px #a3b899,
+  1px 1px 1px #a3b899,
+  1px 1px 1px #a3b899;
+  /* font-weight: bold; */
+}
+/* hero background image */
+.bgimage {
+  height:100vh;
+  background: url('myProfilePic.JPG');
+  background-size:cover;
+  background-position:center;
+}
+/* text css above hero image*/A
+.hero_title {
+  font-size: 4.5rem;
+}
+.hero_desc {
+  font-size: 2rem;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fceee9;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 40% 60%;
+/* spacing on all sections */
+/* /#about, #services, #portfolio, #resume, #contact {
+  margin-top: 15rem;
+  padding-top: 15rem;
+/* } */ 
+#contact {
+  padding-bottom: 4rem;
+}
+/* about section image css */
+.imageAboutPage {
   width: 100%;
 }
 
-main {
+.card-title {
+  text-align: center;
+}
+
+#porfolio {
+  color: #e17450;
+}
+
+/* social media icons styling */
+.social-icons {
+  font-size: 36px;
+  cursor: pointer;
+}
+.fab {
+  color: #a3b899;
+}
+/* footer styling */
+#footer {
+  background-color: #fceee9;
+  text-align: center;
+}
+
+.btn {
+  color: #e17450;
+}
+/* resume styling */
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  width: 800px;
   height: auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
-}
-
-/* This is an element within and element selector */ 
-nav > a {
-  margin: 2% 1% 3%;
-  height: 10%;
-  width: 15%;
-  color: #DB7093;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  border-radius: 30px;
-  background: #FFF5EE;
-  padding: 30px;
-  text-align: center;
-  border: 2px solid #DB7093;
-}
-
-.has-border {
-  border-radius: 25px;
-  border: 2px solid black;
-  background: none;
-  padding: 20px;
-}
-
-nav {
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding-right: 2%;
-}
-/* This is an ID selector */
-#profile-pic {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  margin: 15% auto;
-  grid-column: 2/3;
+  margin: 50px auto;
 }
 
-h1 {
-  color:whitesmoke;
-  grid-column: 2/3;
-  margin: 3% auto;
+.resume .resume_left {
+  width: 280px;
+  background: #a3b899;
+}
+
+.resume .resume_left .resume_profile {
+  width: 100%;
+  height: 280px;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color: white;
+}
+
+.resume .resume_left .regular {
+  color: white;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid ;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #a3b899;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: white;
+}
+
+.resume .resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #a3b899;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per {
+  width: 15%;
   
 }
 
-h2 {
-  grid-column: 2/3;
-  color: whitesmoke;
-  margin: 3% auto;
-  font-style: italic;
+.resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: white;
+  
 }
 
-.small-text {
-  grid-column: 2/3;
-  color: #DB7093;
-  font-size: 10px;
-  margin: 3% auto;
+.resume .resume_left .resume_social .semi-bold {
+  color: white;
+  margin-bottom: 3px;
 }
 
-button {
-  grid-column: 2/3;
-  margin: 3% auto;
-  width: 70%;
-  height: 15%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  border-radius: 25px solid #DB7093;
-  background: #DB7093;
-  padding: 20px;
-  padding-bottom: 5%;
-  text-align: center;
-  color: whitesmoke;
-  letter-spacing: 16px;
-  font-style: italic;
+.resume .resume_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
 }
+
+.resume .resume_right .bold {
+  color: #a3b899;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #a3b899;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115px;
+  background: #f8d3c5;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #a3b899;
+  border-radius: 50%;
+  position: relative;
+  color: #a3b899;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #f8d3c5;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+.aboutparagraph {
+  font-size: 21px;
+}
+
+.intro {
+  font-size: 21px;
+}
+
